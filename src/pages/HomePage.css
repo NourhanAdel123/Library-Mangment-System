@@ -1,0 +1,106 @@
+/* Main container for the homepage */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Styling for the 'Welcome to the Library' heading */
+  .homepage-container h2 {
+    font-size: 3rem; /* Increase font size */
+    color: #2c3e50; /* Darker color for the text */
+    margin-bottom: 30px; /* Space below the heading */
+    background: linear-gradient(to right, #3498db, #8e44ad); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to text */
+    color: transparent; /* Make the text transparent to show gradient */
+    padding: 10px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    letter-spacing: 2px; /* Spacing between letters */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Keyframe for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Navigation container */
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Spacing between nav items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 20px;
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Navigation items */
+  .nav-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    margin-bottom: 20px; /* Space between rows of items */
+  }
+  
+  /* Hover effect for navigation items */
+  .nav-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icons for navigation */
+  .nav-icon {
+    width: 120px; /* Adjusted width */
+    height: 120px; /* Adjusted height */
+    border-radius: 50%; /* Circular border */
+    object-fit: cover; /* Ensure full image is visible */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for icons */
+  .nav-item:hover .nav-icon {
+    transform: scale(1.1);
+  }
+  
+  /* Link styles */
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center; /* Center the text below the image */
+  }
+  
+  /* Hover effect for links */
+  .nav-link:hover {
+    color: #007bff;
+  }
+  

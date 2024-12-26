@@ -1,0 +1,142 @@
+/* Overall page styling */
+.books-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9; /* Light background color */
+}
+
+/* Title */
+.books-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker color for the title */
+}
+
+/* Button to toggle form */
+.toggle-form-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-form-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Add Book Form */
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-book-form input,
+.add-book-form button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-book-form button {
+  background-color: #28a745; /* Green color for button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-book-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Book List */
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Book Card Styling */
+.book-card {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Image Styling */
+.book-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Book Title and Text */
+.book-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #2c3e50; /* Dark text color */
+}
+
+.book-card p {
+  margin: 5px 0;
+  color: #7f8c8d; /* Lighter text color */
+}
+
+/* Delete Button */
+.book-card button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #e74c3c; /* Red for delete button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-card button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c; /* Red color for errors */
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

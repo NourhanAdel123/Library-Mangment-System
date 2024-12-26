@@ -1,0 +1,117 @@
+/* General styles for the Borrow Page */
+.borrow-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Title */
+.borrow-page h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.borrow-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.borrow-form div {
+  margin-bottom: 15px;
+}
+
+.borrow-form label {
+  display: block;
+  font-size: 1.1em;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.borrow-form select,
+.borrow-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.borrow-form button {
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+}
+
+.borrow-form button:hover {
+  background-color: #3498db;
+}
+
+/* Loading message */
+.borrow-form p {
+  text-align: center;
+  color: #e74c3c;
+}
+
+/* Borrowed Books Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2980b9;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  color: #2c3e50;
+}
+
+/* Fine column styling */
+table td:last-child {
+  text-align: center;
+}
+
+table td button {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table td button:hover {
+  background-color: #c0392b;
+}
+
+/* Status message */
+.borrow-page p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #27ae60;
+  font-weight: bold;
+}

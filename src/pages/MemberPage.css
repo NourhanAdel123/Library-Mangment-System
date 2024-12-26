@@ -1,0 +1,88 @@
+.members-page {
+  padding: 20px;
+  background-color: #f8f9fa; /* Lighter background for consistency */
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.members-title {
+  font-size: 2em;
+  text-align: center;
+  color: #2c3e50; /* Dark text color for readability */
+  margin-bottom: 20px;
+}
+
+.toggle-form-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #2980b9; /* Blue background like the borrow button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-form-btn:hover {
+  background-color: #3498db; /* Slightly lighter blue for hover */
+}
+
+.add-member-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-member-form input {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #2980b9; /* Blue background to match BorrowPage */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}
+
+.members-list {
+  margin-top: 20px;
+}
+
+.member-item {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-item:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #e74c3c; /* Red button for delete, like the return button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
